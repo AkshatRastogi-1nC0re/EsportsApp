@@ -1,6 +1,8 @@
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
+import '../forgot_password1/forgot_password1_widget.dart';
+import '../home/home_widget.dart';
 import '../home_page/home_page_widget.dart';
 import '../registration_form/registration_form_widget.dart';
 import 'package:auto_size_text/auto_size_text.dart';
@@ -63,7 +65,7 @@ class _SignInPageWidgetState extends State<SignInPageWidget> {
                                 await Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => HomePageWidget(),
+                                    builder: (context) => HomeWidget(),
                                   ),
                                 );
                               } finally {
@@ -277,13 +279,23 @@ class _SignInPageWidgetState extends State<SignInPageWidget> {
               ),
               Align(
                 alignment: AlignmentDirectional(-0.75, 0.25),
-                child: AutoSizeText(
-                  'Forgot Password ?',
-                  textAlign: TextAlign.center,
-                  style: FlutterFlowTheme.bodyText1.override(
-                    fontFamily: 'Poppins',
-                    color: Colors.white,
-                    fontSize: 10,
+                child: GestureDetector(
+                  onTap: () async {
+                    await Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ForgotPassword1Widget(),
+                      ),
+                    );
+                  },
+                  child: AutoSizeText(
+                    'Forgot Password ?',
+                    textAlign: TextAlign.center,
+                    style: FlutterFlowTheme.bodyText1.override(
+                      fontFamily: 'Poppins',
+                      color: Colors.white,
+                      fontSize: 10,
+                    ),
                   ),
                 ),
               ),
