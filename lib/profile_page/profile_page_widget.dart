@@ -247,7 +247,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                 context,
                                                 MaterialPageRoute(
                                                   builder: (context) =>
-                                                      HomePageWidget(),
+                                                      HomeWidget(),
                                                 ),
                                               );
                                             },
@@ -422,7 +422,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                             context,
                                                             MaterialPageRoute(
                                                               builder: (context) =>
-                                                                  HomePageWidget(),
+                                                                  HomeWidget(),
                                                             ),
                                                           );
                                                         } finally {
@@ -474,7 +474,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                 context,
                                                 MaterialPageRoute(
                                                   builder: (context) =>
-                                                      HomePageWidget(),
+                                                      HomeWidget(),
                                                 ),
                                               );
                                             },
@@ -649,7 +649,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                             context,
                                                             MaterialPageRoute(
                                                               builder: (context) =>
-                                                                  HomePageWidget(),
+                                                                  HomeWidget(),
                                                             ),
                                                           );
                                                         } finally {
@@ -701,7 +701,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                 context,
                                                 MaterialPageRoute(
                                                   builder: (context) =>
-                                                      HomePageWidget(),
+                                                      HomeWidget(),
                                                 ),
                                               );
                                             },
@@ -799,7 +799,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => HomePageWidget(),
+                                      builder: (context) => HomeWidget(),
                                     ),
                                   );
                                 },
