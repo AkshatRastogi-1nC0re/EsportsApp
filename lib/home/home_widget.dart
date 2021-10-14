@@ -10,6 +10,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../profile_page/profile_page_widget.dart';
+import '../reviews/reviews_widget.dart';
 
 class HomeWidget extends StatefulWidget {
   HomeWidget({Key key}) : super(key: key);
@@ -285,7 +286,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                       context,
                                                       MaterialPageRoute(
                                                         builder: (context) =>
-                                                            HomePageWidget(),
+                                                            ReviewsWidget(),
                                                       ),
                                                     );
                                                   },
@@ -546,7 +547,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                       context,
                                                       MaterialPageRoute(
                                                         builder: (context) =>
-                                                            HomePageWidget(),
+                                                            ReviewsWidget(),
                                                       ),
                                                     );
                                                   },
@@ -807,7 +808,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                       context,
                                                       MaterialPageRoute(
                                                         builder: (context) =>
-                                                            HomePageWidget(),
+                                                            ReviewsWidget(),
                                                       ),
                                                     );
                                                   },

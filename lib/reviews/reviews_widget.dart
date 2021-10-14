@@ -7,6 +7,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../write_review/write_review_widget.dart';
+
 class ReviewsWidget extends StatefulWidget {
   ReviewsWidget({Key key}) : super(key: key);
 
@@ -316,7 +318,12 @@ class _ReviewsWidgetState extends State<ReviewsWidget> {
                     padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
                     child: FFButtonWidget(
                       onPressed: () {
-                        print('Button pressed ...');
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => WriteReviewWidget(),
+                          ),
+                        );
                       },
                       text: 'Write a review',
                       options: FFButtonOptions(

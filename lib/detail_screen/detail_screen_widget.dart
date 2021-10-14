@@ -7,6 +7,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../reviews/reviews_widget.dart';
+
 class DetailScreenWidget extends StatefulWidget {
   DetailScreenWidget({Key key}) : super(key: key);
 
@@ -132,7 +134,7 @@ class _DetailScreenWidgetState extends State<DetailScreenWidget> {
                             await Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => HomePageWidget(),
+                                builder: (context) => ReviewsWidget(),
                               ),
                             );
                           },
