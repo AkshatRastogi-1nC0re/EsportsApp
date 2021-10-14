@@ -247,8 +247,8 @@ class _ArenaWidgetState extends State<ArenaWidget> {
                           alignment: AlignmentDirectional(0.1, 0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(20),
-                            child: Image.network(
-                              'https://picsum.photos/seed/476/600',
+                            child: Image.asset(
+                              'assets/images/1.jpg',
                               width: 150,
                               height: 150,
                               fit: BoxFit.cover,
@@ -309,8 +309,8 @@ class _ArenaWidgetState extends State<ArenaWidget> {
                           alignment: AlignmentDirectional(0.1, 0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(20),
-                            child: Image.network(
-                              'https://picsum.photos/seed/476/600',
+                            child: Image.asset(
+                              'assets/images/2.jpg',
                               width: 150,
                               height: 150,
                               fit: BoxFit.cover,
@@ -371,8 +371,8 @@ class _ArenaWidgetState extends State<ArenaWidget> {
                           alignment: AlignmentDirectional(0.1, 0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(20),
-                            child: Image.network(
-                              'https://picsum.photos/seed/476/600',
+                            child: Image.asset(
+                              'assets/images/3.jpg',
                               width: 150,
                               height: 150,
                               fit: BoxFit.cover,
@@ -433,8 +433,8 @@ class _ArenaWidgetState extends State<ArenaWidget> {
                           alignment: AlignmentDirectional(0.1, 0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(20),
-                            child: Image.network(
-                              'https://picsum.photos/seed/476/600',
+                            child: Image.asset(
+                              'assets/images/4.jpg',
                               width: 150,
                               height: 150,
                               fit: BoxFit.cover,
