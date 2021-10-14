@@ -60,7 +60,8 @@ class _SignInPageWidgetState extends State<SignInPageWidget> {
                           Align(
                             alignment: AlignmentDirectional(0, 0.45),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(5, 10, 0, 10),
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(5, 10, 0, 10),
                               child: FFButtonWidget(
                                 onPressed: () async {
                                   setState(() => _loadingButton1 = true);
@@ -68,7 +69,7 @@ class _SignInPageWidgetState extends State<SignInPageWidget> {
                                     await Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                        builder: (context) => HomePageWidget(),
+                                        builder: (context) => HomeWidget(),
                                       ),
                                     );
                                   } finally {
@@ -80,7 +81,8 @@ class _SignInPageWidgetState extends State<SignInPageWidget> {
                                   width: 260,
                                   height: 50,
                                   color: Color(0x003474E0),
-                                  textStyle: FlutterFlowTheme.subtitle2.override(
+                                  textStyle:
+                                      FlutterFlowTheme.subtitle2.override(
                                     fontFamily: 'Poppins',
                                     color: Colors.white,
                                     fontSize: 20,
