@@ -206,7 +206,7 @@ class _ArenaWidgetState extends State<ArenaWidget> {
             Align(
               alignment: AlignmentDirectional(-1.39, 32),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20, 130, 20, 0),
+                padding: EdgeInsetsDirectional.fromSTEB(20, 140, 20, 0),
                 child: GridView(
                   padding: EdgeInsets.zero,
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
