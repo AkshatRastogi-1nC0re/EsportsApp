@@ -784,7 +784,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(20, 10, 0, 10),
+                      padding: EdgeInsetsDirectional.fromSTEB(20, 0, 0, 10),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -819,7 +819,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(20, 10, 0, 10),
+                      padding: EdgeInsetsDirectional.fromSTEB(20, 0, 0, 10),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -854,7 +854,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(20, 10, 20, 10),
+                      padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 10),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
