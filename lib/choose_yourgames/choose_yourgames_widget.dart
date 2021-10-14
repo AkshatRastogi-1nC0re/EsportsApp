@@ -2,6 +2,7 @@ import '../choose_yourgames2/choose_yourgames2_widget.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
+import '../home/home_widget.dart';
 import '../home_page/home_page_widget.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
@@ -195,14 +196,14 @@ class _ChooseYourgamesWidgetState extends State<ChooseYourgamesWidget> {
                     await Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ChooseYourgames2Widget(),
+                        builder: (context) => HomeWidget(),
                       ),
                     );
                   } finally {
                     setState(() => _loadingButton5 = false);
                   }
                 },
-                text: 'See More',
+                text: 'Done !',
                 options: FFButtonOptions(
                   width: 260,
                   height: 50,
