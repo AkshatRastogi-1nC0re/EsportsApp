@@ -1,3 +1,4 @@
+import '../arena/arena_widget.dart';
 import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
@@ -6,6 +7,8 @@ import '../home_page/home_page_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../profile_page/profile_page_widget.dart';
 
 class HomeWidget extends StatefulWidget {
   HomeWidget({Key key}) : super(key: key);
@@ -53,14 +56,16 @@ class _HomeWidgetState extends State<HomeWidget> {
                               ),
                             ),
                           ),
-                          SizedBox(height: 10,),
+                          SizedBox(
+                            height: 10,
+                          ),
                           Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Expanded(
                                 child: Padding(
-                                  padding:
-                                      EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      8, 0, 8, 0),
                                   child: Card(
                                     clipBehavior: Clip.antiAliasWithSaveLayer,
                                     color: Color(0xFF060A29),
@@ -91,21 +96,23 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding:
-                                                  EdgeInsetsDirectional.fromSTEB(
-                                                      12, 4, 12, 4),
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(12, 4, 12, 4),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
                                                   Padding(
-                                                    padding: EdgeInsetsDirectional
-                                                        .fromSTEB(0, 4, 0, 0),
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(
+                                                                0, 4, 0, 0),
                                                     child: Text(
                                                       'Introduction to the game',
                                                       style: FlutterFlowTheme
                                                           .subtitle1
                                                           .override(
-                                                        fontFamily: 'Lexend Deca',
+                                                        fontFamily:
+                                                            'Lexend Deca',
                                                         color: Colors.white,
                                                         fontSize: 18,
                                                         fontWeight:
@@ -117,9 +124,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding:
-                                                  EdgeInsetsDirectional.fromSTEB(
-                                                      12, 4, 12, 4),
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(12, 4, 12, 4),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
@@ -129,8 +135,10 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                       style: FlutterFlowTheme
                                                           .bodyText2
                                                           .override(
-                                                        fontFamily: 'Lexend Deca',
-                                                        color: Color(0xFF8B97A2),
+                                                        fontFamily:
+                                                            'Lexend Deca',
+                                                        color:
+                                                            Color(0xFF8B97A2),
                                                         fontSize: 14,
                                                         fontWeight:
                                                             FontWeight.normal,
@@ -141,15 +149,16 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding:
-                                                  EdgeInsetsDirectional.fromSTEB(
-                                                      12, 4, 12, 8),
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(12, 4, 12, 8),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
                                                   Padding(
-                                                    padding: EdgeInsetsDirectional
-                                                        .fromSTEB(0, 0, 0, 4),
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(
+                                                                0, 0, 0, 4),
                                                     child: Icon(
                                                       Icons.person,
                                                       color: Color(0xFF9E9E9E),
@@ -157,15 +166,19 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                     ),
                                                   ),
                                                   Padding(
-                                                    padding: EdgeInsetsDirectional
-                                                        .fromSTEB(4, 0, 80, 0),
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(
+                                                                4, 0, 80, 0),
                                                     child: Text(
                                                       'Robert California',
                                                       style: FlutterFlowTheme
                                                           .bodyText1
                                                           .override(
-                                                        fontFamily: 'Lexend Deca',
-                                                        color: Color(0xFF9E9E9E),
+                                                        fontFamily:
+                                                            'Lexend Deca',
+                                                        color:
+                                                            Color(0xFF9E9E9E),
                                                         fontSize: 14,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -187,11 +200,13 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                               _loadingButton1 =
                                                                   true);
                                                           try {
-                                                            await Navigator.push(
+                                                            await Navigator
+                                                                .push(
                                                               context,
                                                               MaterialPageRoute(
-                                                                builder: (context) =>
-                                                                    HomePageWidget(),
+                                                                builder:
+                                                                    (context) =>
+                                                                        HomePageWidget(),
                                                               ),
                                                             );
                                                           } finally {
@@ -201,7 +216,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           }
                                                         },
                                                         text: 'INTRO',
-                                                        options: FFButtonOptions(
+                                                        options:
+                                                            FFButtonOptions(
                                                           width: 100,
                                                           height: 23,
                                                           color:
@@ -210,19 +226,22 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                               FlutterFlowTheme
                                                                   .subtitle2
                                                                   .override(
-                                                            fontFamily: 'Poppins',
-                                                            color:
-                                                                Color(0xFF37E0D0),
+                                                            fontFamily:
+                                                                'Poppins',
+                                                            color: Color(
+                                                                0xFF37E0D0),
                                                             fontSize: 20,
                                                           ),
-                                                          borderSide: BorderSide(
-                                                            color:
-                                                                Color(0xFF37E0D0),
+                                                          borderSide:
+                                                              BorderSide(
+                                                            color: Color(
+                                                                0xFF37E0D0),
                                                             width: 2,
                                                           ),
                                                           borderRadius: 12,
                                                         ),
-                                                        loading: _loadingButton1,
+                                                        loading:
+                                                            _loadingButton1,
                                                       ),
                                                     ),
                                                   )
@@ -232,7 +251,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                           ],
                                         ),
                                         Align(
-                                          alignment: AlignmentDirectional(-1, 0),
+                                          alignment:
+                                              AlignmentDirectional(-1, 0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -285,8 +305,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                             children: [
                               Expanded(
                                 child: Padding(
-                                  padding:
-                                      EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      8, 0, 8, 0),
                                   child: Card(
                                     clipBehavior: Clip.antiAliasWithSaveLayer,
                                     color: Color(0xFF060A29),
@@ -317,21 +337,23 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding:
-                                                  EdgeInsetsDirectional.fromSTEB(
-                                                      12, 4, 12, 4),
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(12, 4, 12, 4),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
                                                   Padding(
-                                                    padding: EdgeInsetsDirectional
-                                                        .fromSTEB(0, 4, 0, 0),
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(
+                                                                0, 4, 0, 0),
                                                     child: Text(
                                                       'Walk Around The Map',
                                                       style: FlutterFlowTheme
                                                           .subtitle1
                                                           .override(
-                                                        fontFamily: 'Lexend Deca',
+                                                        fontFamily:
+                                                            'Lexend Deca',
                                                         color: Colors.white,
                                                         fontSize: 18,
                                                         fontWeight:
@@ -343,9 +365,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding:
-                                                  EdgeInsetsDirectional.fromSTEB(
-                                                      12, 4, 12, 4),
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(12, 4, 12, 4),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
@@ -355,8 +376,10 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                       style: FlutterFlowTheme
                                                           .bodyText2
                                                           .override(
-                                                        fontFamily: 'Lexend Deca',
-                                                        color: Color(0xFF8B97A2),
+                                                        fontFamily:
+                                                            'Lexend Deca',
+                                                        color:
+                                                            Color(0xFF8B97A2),
                                                         fontSize: 14,
                                                         fontWeight:
                                                             FontWeight.normal,
@@ -367,15 +390,16 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding:
-                                                  EdgeInsetsDirectional.fromSTEB(
-                                                      12, 4, 12, 8),
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(12, 4, 12, 8),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
                                                   Padding(
-                                                    padding: EdgeInsetsDirectional
-                                                        .fromSTEB(0, 0, 0, 4),
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(
+                                                                0, 0, 0, 4),
                                                     child: Icon(
                                                       Icons.person,
                                                       color: Color(0xFF9E9E9E),
@@ -383,15 +407,19 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                     ),
                                                   ),
                                                   Padding(
-                                                    padding: EdgeInsetsDirectional
-                                                        .fromSTEB(4, 0, 80, 0),
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(
+                                                                4, 0, 80, 0),
                                                     child: Text(
                                                       'Robert California',
                                                       style: FlutterFlowTheme
                                                           .bodyText1
                                                           .override(
-                                                        fontFamily: 'Lexend Deca',
-                                                        color: Color(0xFF9E9E9E),
+                                                        fontFamily:
+                                                            'Lexend Deca',
+                                                        color:
+                                                            Color(0xFF9E9E9E),
                                                         fontSize: 14,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -413,11 +441,13 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                               _loadingButton2 =
                                                                   true);
                                                           try {
-                                                            await Navigator.push(
+                                                            await Navigator
+                                                                .push(
                                                               context,
                                                               MaterialPageRoute(
-                                                                builder: (context) =>
-                                                                    HomePageWidget(),
+                                                                builder:
+                                                                    (context) =>
+                                                                        HomePageWidget(),
                                                               ),
                                                             );
                                                           } finally {
@@ -427,7 +457,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           }
                                                         },
                                                         text: 'INTRO',
-                                                        options: FFButtonOptions(
+                                                        options:
+                                                            FFButtonOptions(
                                                           width: 100,
                                                           height: 23,
                                                           color:
@@ -436,19 +467,22 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                               FlutterFlowTheme
                                                                   .subtitle2
                                                                   .override(
-                                                            fontFamily: 'Poppins',
-                                                            color:
-                                                                Color(0xFF66FF00),
+                                                            fontFamily:
+                                                                'Poppins',
+                                                            color: Color(
+                                                                0xFF66FF00),
                                                             fontSize: 20,
                                                           ),
-                                                          borderSide: BorderSide(
-                                                            color:
-                                                                Color(0xFF66FF00),
+                                                          borderSide:
+                                                              BorderSide(
+                                                            color: Color(
+                                                                0xFF66FF00),
                                                             width: 2,
                                                           ),
                                                           borderRadius: 12,
                                                         ),
-                                                        loading: _loadingButton2,
+                                                        loading:
+                                                            _loadingButton2,
                                                       ),
                                                     ),
                                                   )
@@ -458,7 +492,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                           ],
                                         ),
                                         Align(
-                                          alignment: AlignmentDirectional(-1, 0),
+                                          alignment:
+                                              AlignmentDirectional(-1, 0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -511,8 +546,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                             children: [
                               Expanded(
                                 child: Padding(
-                                  padding:
-                                  EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      8, 0, 8, 0),
                                   child: Card(
                                     clipBehavior: Clip.antiAliasWithSaveLayer,
                                     color: Color(0xFF060A29),
@@ -534,8 +569,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                             ),
                                             Container(
                                               width: MediaQuery.of(context)
-                                                  .size
-                                                  .width *
+                                                      .size
+                                                      .width *
                                                   0.85,
                                               height: 1,
                                               decoration: BoxDecoration(
@@ -543,25 +578,27 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  12, 4, 12, 4),
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(12, 4, 12, 4),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
                                                   Padding(
-                                                    padding: EdgeInsetsDirectional
-                                                        .fromSTEB(0, 4, 0, 0),
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(
+                                                                0, 4, 0, 0),
                                                     child: Text(
                                                       'Walk Around The Map',
                                                       style: FlutterFlowTheme
                                                           .subtitle1
                                                           .override(
-                                                        fontFamily: 'Lexend Deca',
+                                                        fontFamily:
+                                                            'Lexend Deca',
                                                         color: Colors.white,
                                                         fontSize: 18,
                                                         fontWeight:
-                                                        FontWeight.w500,
+                                                            FontWeight.w500,
                                                       ),
                                                     ),
                                                   )
@@ -569,9 +606,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  12, 4, 12, 4),
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(12, 4, 12, 4),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
@@ -581,11 +617,13 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                       style: FlutterFlowTheme
                                                           .bodyText2
                                                           .override(
-                                                        fontFamily: 'Lexend Deca',
-                                                        color: Color(0xFF8B97A2),
+                                                        fontFamily:
+                                                            'Lexend Deca',
+                                                        color:
+                                                            Color(0xFF8B97A2),
                                                         fontSize: 14,
                                                         fontWeight:
-                                                        FontWeight.normal,
+                                                            FontWeight.normal,
                                                       ),
                                                     ),
                                                   )
@@ -593,15 +631,16 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  12, 4, 12, 8),
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(12, 4, 12, 8),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
                                                   Padding(
-                                                    padding: EdgeInsetsDirectional
-                                                        .fromSTEB(0, 0, 0, 4),
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(
+                                                                0, 0, 0, 4),
                                                     child: Icon(
                                                       Icons.person,
                                                       color: Color(0xFF9E9E9E),
@@ -609,72 +648,82 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                     ),
                                                   ),
                                                   Padding(
-                                                    padding: EdgeInsetsDirectional
-                                                        .fromSTEB(4, 0, 80, 0),
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(
+                                                                4, 0, 80, 0),
                                                     child: Text(
                                                       'Robert California',
                                                       style: FlutterFlowTheme
                                                           .bodyText1
                                                           .override(
-                                                        fontFamily: 'Lexend Deca',
-                                                        color: Color(0xFF9E9E9E),
+                                                        fontFamily:
+                                                            'Lexend Deca',
+                                                        color:
+                                                            Color(0xFF9E9E9E),
                                                         fontSize: 14,
                                                         fontWeight:
-                                                        FontWeight.w500,
+                                                            FontWeight.w500,
                                                       ),
                                                     ),
                                                   ),
                                                   Align(
                                                     alignment:
-                                                    AlignmentDirectional(
-                                                        0, 0.55),
+                                                        AlignmentDirectional(
+                                                            0, 0.55),
                                                     child: Padding(
                                                       padding:
-                                                      EdgeInsetsDirectional
-                                                          .fromSTEB(
-                                                          5, 0, 0, 0),
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  5, 0, 0, 0),
                                                       child: FFButtonWidget(
                                                         onPressed: () async {
                                                           setState(() =>
-                                                          _loadingButton2 =
-                                                          true);
+                                                              _loadingButton2 =
+                                                                  true);
                                                           try {
-                                                            await Navigator.push(
+                                                            await Navigator
+                                                                .push(
                                                               context,
                                                               MaterialPageRoute(
-                                                                builder: (context) =>
-                                                                    HomePageWidget(),
+                                                                builder:
+                                                                    (context) =>
+                                                                        HomePageWidget(),
                                                               ),
                                                             );
                                                           } finally {
                                                             setState(() =>
-                                                            _loadingButton2 =
-                                                            false);
+                                                                _loadingButton2 =
+                                                                    false);
                                                           }
                                                         },
                                                         text: 'INTRO',
-                                                        options: FFButtonOptions(
+                                                        options:
+                                                            FFButtonOptions(
                                                           width: 100,
                                                           height: 23,
                                                           color:
-                                                          Color(0x003474E0),
+                                                              Color(0x003474E0),
                                                           textStyle:
-                                                          FlutterFlowTheme
-                                                              .subtitle2
-                                                              .override(
-                                                            fontFamily: 'Poppins',
-                                                            color:
-                                                            Color(0xFF66FF00),
+                                                              FlutterFlowTheme
+                                                                  .subtitle2
+                                                                  .override(
+                                                            fontFamily:
+                                                                'Poppins',
+                                                            color: Color(
+                                                                0xFF66FF00),
                                                             fontSize: 20,
                                                           ),
-                                                          borderSide: BorderSide(
-                                                            color:
-                                                            Color(0xFF66FF00),
+                                                          borderSide:
+                                                              BorderSide(
+                                                            color: Color(
+                                                                0xFF66FF00),
                                                             width: 2,
                                                           ),
                                                           borderRadius: 12,
                                                         ),
-                                                        loading: _loadingButton2,
+                                                        loading:
+                                                            _loadingButton2,
                                                       ),
                                                     ),
                                                   )
@@ -684,11 +733,12 @@ class _HomeWidgetState extends State<HomeWidget> {
                                           ],
                                         ),
                                         Align(
-                                          alignment: AlignmentDirectional(-1, 0),
+                                          alignment:
+                                              AlignmentDirectional(-1, 0),
                                           child: Padding(
                                             padding:
-                                            EdgeInsetsDirectional.fromSTEB(
-                                                5, 10, 0, 0),
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    5, 10, 0, 0),
                                             child: FFButtonWidget(
                                               onPressed: () async {
                                                 await Navigator.push(
@@ -748,7 +798,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                 fit: BoxFit.cover,
               ),
             ),
-
             Align(
               alignment: AlignmentDirectional(-0.85, -0.85),
               child: Text(
@@ -803,7 +852,12 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   size: 30,
                                 ),
                                 onPressed: () {
-                                  print('IconButton pressed ...');
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => HomeWidget(),
+                                    ),
+                                  );
                                 },
                               ),
                             ),
@@ -838,7 +892,12 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   size: 30,
                                 ),
                                 onPressed: () {
-                                  print('IconButton pressed ...');
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => ArenaWidget(),
+                                    ),
+                                  );
                                 },
                               ),
                             ),
@@ -873,7 +932,12 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   size: 30,
                                 ),
                                 onPressed: () {
-                                  print('IconButton pressed ...');
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => ProfilePageWidget(),
+                                    ),
+                                  );
                                 },
                               ),
                             ),
