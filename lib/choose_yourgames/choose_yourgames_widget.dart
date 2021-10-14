@@ -1,3 +1,4 @@
+import '../choose_yourgames2/choose_yourgames2_widget.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
@@ -75,7 +76,7 @@ class _ChooseYourgamesWidgetState extends State<ChooseYourgamesWidget> {
                                     onPressed: () {
                                       print('Button pressed ...');
                                     },
-                                    text: 'Button',
+                                    text: '',
                                     options: FFButtonOptions(
                                       width: 100,
                                       height: 10,
@@ -97,7 +98,7 @@ class _ChooseYourgamesWidgetState extends State<ChooseYourgamesWidget> {
                                     onPressed: () {
                                       print('Button pressed ...');
                                     },
-                                    text: 'Button',
+                                    text: '',
                                     options: FFButtonOptions(
                                       width: 100,
                                       height: 10,
@@ -119,7 +120,7 @@ class _ChooseYourgamesWidgetState extends State<ChooseYourgamesWidget> {
                                     onPressed: () {
                                       print('Button pressed ...');
                                     },
-                                    text: 'Button',
+                                    text: '',
                                     options: FFButtonOptions(
                                       width: 100,
                                       height: 10,
@@ -141,7 +142,7 @@ class _ChooseYourgamesWidgetState extends State<ChooseYourgamesWidget> {
                                     onPressed: () {
                                       print('Button pressed ...');
                                     },
-                                    text: 'Button',
+                                    text: '',
                                     options: FFButtonOptions(
                                       width: 100,
                                       height: 10,
@@ -168,7 +169,7 @@ class _ChooseYourgamesWidgetState extends State<ChooseYourgamesWidget> {
                       Align(
                         alignment: AlignmentDirectional(-0.02, -0.17),
                         child: AutoSizeText(
-                          'Choose your Platform',
+                          'Choose your Games',
                           textAlign: TextAlign.center,
                           style: FlutterFlowTheme.bodyText1.override(
                             fontFamily: 'Poppins',
@@ -194,7 +195,7 @@ class _ChooseYourgamesWidgetState extends State<ChooseYourgamesWidget> {
                     await Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => HomePageWidget(),
+                        builder: (context) => ChooseYourgames2Widget(),
                       ),
                     );
                   } finally {

@@ -1,3 +1,4 @@
+import '../choose_yourgames/choose_yourgames_widget.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
@@ -237,7 +238,12 @@ class _ChooseYourPlatformWidgetState extends State<ChooseYourPlatformWidget> {
                 alignment: AlignmentDirectional(0, 0),
                 child: FFButtonWidget(
                   onPressed: () {
-                    print('Button pressed ...');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ChooseYourgamesWidget(),
+                      ),
+                    );
                   },
                   text: 'Mobile',
                   options: FFButtonOptions(
@@ -262,7 +268,12 @@ class _ChooseYourPlatformWidgetState extends State<ChooseYourPlatformWidget> {
                 alignment: AlignmentDirectional(0, 0.2),
                 child: FFButtonWidget(
                   onPressed: () {
-                    print('Button pressed ...');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ChooseYourgamesWidget(),
+                      ),
+                    );
                   },
                   text: 'Console',
                   options: FFButtonOptions(
@@ -287,7 +298,12 @@ class _ChooseYourPlatformWidgetState extends State<ChooseYourPlatformWidget> {
                 alignment: AlignmentDirectional(0, 0.4),
                 child: FFButtonWidget(
                   onPressed: () {
-                    print('Button pressed ...');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ChooseYourgamesWidget(),
+                      ),
+                    );
                   },
                   text: 'Computer',
                   options: FFButtonOptions(

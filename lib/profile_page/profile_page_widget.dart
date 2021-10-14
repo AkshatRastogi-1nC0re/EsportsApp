@@ -1,3 +1,4 @@
+import '../arena/arena_widget.dart';
 import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
@@ -52,7 +53,9 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                             ),
                           ),
                         ),
-                        SizedBox(height: 10,),
+                        SizedBox(
+                          height: 10,
+                        ),
                         Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -513,7 +516,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                             Expanded(
                               child: Padding(
                                 padding:
-                                EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
+                                    EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
                                 child: Card(
                                   clipBehavior: Clip.antiAliasWithSaveLayer,
                                   color: Color(0xFF060A29),
@@ -536,8 +539,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                           ),
                                           Container(
                                             width: MediaQuery.of(context)
-                                                .size
-                                                .width *
+                                                    .size
+                                                    .width *
                                                 0.85,
                                             height: 1,
                                             decoration: BoxDecoration(
@@ -546,8 +549,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                            EdgeInsetsDirectional.fromSTEB(
-                                                12, 4, 12, 4),
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    12, 4, 12, 4),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
@@ -563,7 +566,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                       color: Colors.white,
                                                       fontSize: 18,
                                                       fontWeight:
-                                                      FontWeight.w500,
+                                                          FontWeight.w500,
                                                     ),
                                                   ),
                                                 )
@@ -572,8 +575,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                            EdgeInsetsDirectional.fromSTEB(
-                                                12, 4, 12, 4),
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    12, 4, 12, 4),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
@@ -587,7 +590,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                       color: Color(0xFF8B97A2),
                                                       fontSize: 14,
                                                       fontWeight:
-                                                      FontWeight.normal,
+                                                          FontWeight.normal,
                                                     ),
                                                   ),
                                                 )
@@ -596,8 +599,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                            EdgeInsetsDirectional.fromSTEB(
-                                                12, 4, 12, 8),
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    12, 4, 12, 8),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
@@ -622,24 +625,24 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                       color: Color(0xFF9E9E9E),
                                                       fontSize: 14,
                                                       fontWeight:
-                                                      FontWeight.w500,
+                                                          FontWeight.w500,
                                                     ),
                                                   ),
                                                 ),
                                                 Align(
                                                   alignment:
-                                                  AlignmentDirectional(
-                                                      0, 0.55),
+                                                      AlignmentDirectional(
+                                                          0, 0.55),
                                                   child: Padding(
                                                     padding:
-                                                    EdgeInsetsDirectional
-                                                        .fromSTEB(
-                                                        5, 0, 0, 0),
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(
+                                                                5, 0, 0, 0),
                                                     child: FFButtonWidget(
                                                       onPressed: () async {
                                                         setState(() =>
-                                                        _loadingButton2 =
-                                                        true);
+                                                            _loadingButton2 =
+                                                                true);
                                                         try {
                                                           await Navigator.push(
                                                             context,
@@ -650,8 +653,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                           );
                                                         } finally {
                                                           setState(() =>
-                                                          _loadingButton2 =
-                                                          false);
+                                                              _loadingButton2 =
+                                                                  false);
                                                         }
                                                       },
                                                       text: 'INTRO',
@@ -659,19 +662,19 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                         width: 100,
                                                         height: 23,
                                                         color:
-                                                        Color(0x003474E0),
+                                                            Color(0x003474E0),
                                                         textStyle:
-                                                        FlutterFlowTheme
-                                                            .subtitle2
-                                                            .override(
+                                                            FlutterFlowTheme
+                                                                .subtitle2
+                                                                .override(
                                                           fontFamily: 'Poppins',
                                                           color:
-                                                          Color(0xFF66FF00),
+                                                              Color(0xFF66FF00),
                                                           fontSize: 20,
                                                         ),
                                                         borderSide: BorderSide(
                                                           color:
-                                                          Color(0xFF66FF00),
+                                                              Color(0xFF66FF00),
                                                           width: 2,
                                                         ),
                                                         borderRadius: 12,
@@ -689,8 +692,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                         alignment: AlignmentDirectional(-1, 0),
                                         child: Padding(
                                           padding:
-                                          EdgeInsetsDirectional.fromSTEB(
-                                              5, 10, 0, 0),
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  5, 10, 0, 0),
                                           child: FFButtonWidget(
                                             onPressed: () async {
                                               await Navigator.push(
@@ -792,7 +795,12 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                   size: 30,
                                 ),
                                 onPressed: () {
-                                  print('IconButton pressed ...');
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => HomePageWidget(),
+                                    ),
+                                  );
                                 },
                               ),
                             ),
@@ -827,7 +835,12 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                   size: 30,
                                 ),
                                 onPressed: () {
-                                  print('IconButton pressed ...');
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => ArenaWidget(),
+                                    ),
+                                  );
                                 },
                               ),
                             ),

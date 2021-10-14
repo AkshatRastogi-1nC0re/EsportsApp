@@ -1,3 +1,4 @@
+import '../choose_your_platform/choose_your_platform_widget.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
@@ -77,7 +78,8 @@ class _RegistrationFormWidgetState extends State<RegistrationFormWidget> {
                                 await Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => HomePageWidget(),
+                                    builder: (context) =>
+                                        ChooseYourPlatformWidget(),
                                   ),
                                 );
                               } finally {

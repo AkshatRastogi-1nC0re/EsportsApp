@@ -32,7 +32,7 @@ class _HomeWidgetState extends State<HomeWidget> {
           alignment: AlignmentDirectional(0, 0),
           children: [
             Padding(
-              padding:  EdgeInsets.all(8.0),
+              padding: EdgeInsets.all(8.0),
               child: ListView(
                 padding: EdgeInsets.zero,
                 shrinkWrap: true,
@@ -101,7 +101,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(12, 4, 12, 4),
                                                 child: Row(
-                                                  mainAxisSize: MainAxisSize.max,
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
                                                   children: [
                                                     Padding(
                                                       padding:
@@ -129,7 +130,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(12, 4, 12, 4),
                                                 child: Row(
-                                                  mainAxisSize: MainAxisSize.max,
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
                                                   children: [
                                                     Expanded(
                                                       child: Text(
@@ -154,7 +156,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(12, 4, 12, 8),
                                                 child: Row(
-                                                  mainAxisSize: MainAxisSize.max,
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
                                                   children: [
                                                     Padding(
                                                       padding:
@@ -163,7 +166,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                   0, 0, 0, 4),
                                                       child: Icon(
                                                         Icons.person,
-                                                        color: Color(0xFF9E9E9E),
+                                                        color:
+                                                            Color(0xFF9E9E9E),
                                                         size: 20,
                                                       ),
                                                     ),
@@ -222,8 +226,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                               FFButtonOptions(
                                                             width: 100,
                                                             height: 23,
-                                                            color:
-                                                                Color(0x003474E0),
+                                                            color: Color(
+                                                                0x003474E0),
                                                             textStyle:
                                                                 FlutterFlowTheme
                                                                     .subtitle2
@@ -256,9 +260,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                             alignment:
                                                 AlignmentDirectional(-1, 0),
                                             child: Padding(
-                                              padding:
-                                                  EdgeInsetsDirectional.fromSTEB(
-                                                      5, 10, 0, 0),
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(5, 10, 0, 0),
                                               child: FFButtonWidget(
                                                 onPressed: () async {
                                                   await Navigator.push(
@@ -342,7 +345,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(12, 4, 12, 4),
                                                 child: Row(
-                                                  mainAxisSize: MainAxisSize.max,
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
                                                   children: [
                                                     Padding(
                                                       padding:
@@ -370,7 +374,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(12, 4, 12, 4),
                                                 child: Row(
-                                                  mainAxisSize: MainAxisSize.max,
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
                                                   children: [
                                                     Expanded(
                                                       child: Text(
@@ -395,7 +400,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(12, 4, 12, 8),
                                                 child: Row(
-                                                  mainAxisSize: MainAxisSize.max,
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
                                                   children: [
                                                     Padding(
                                                       padding:
@@ -404,7 +410,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                   0, 0, 0, 4),
                                                       child: Icon(
                                                         Icons.person,
-                                                        color: Color(0xFF9E9E9E),
+                                                        color:
+                                                            Color(0xFF9E9E9E),
                                                         size: 20,
                                                       ),
                                                     ),
@@ -463,8 +470,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                               FFButtonOptions(
                                                             width: 100,
                                                             height: 23,
-                                                            color:
-                                                                Color(0x003474E0),
+                                                            color: Color(
+                                                                0x003474E0),
                                                             textStyle:
                                                                 FlutterFlowTheme
                                                                     .subtitle2
@@ -497,9 +504,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                             alignment:
                                                 AlignmentDirectional(-1, 0),
                                             child: Padding(
-                                              padding:
-                                                  EdgeInsetsDirectional.fromSTEB(
-                                                      5, 10, 0, 0),
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(5, 10, 0, 0),
                                               child: FFButtonWidget(
                                                 onPressed: () async {
                                                   await Navigator.push(
@@ -583,7 +589,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(12, 4, 12, 4),
                                                 child: Row(
-                                                  mainAxisSize: MainAxisSize.max,
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
                                                   children: [
                                                     Padding(
                                                       padding:
@@ -611,7 +618,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(12, 4, 12, 4),
                                                 child: Row(
-                                                  mainAxisSize: MainAxisSize.max,
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
                                                   children: [
                                                     Expanded(
                                                       child: Text(
@@ -636,7 +644,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(12, 4, 12, 8),
                                                 child: Row(
-                                                  mainAxisSize: MainAxisSize.max,
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
                                                   children: [
                                                     Padding(
                                                       padding:
@@ -645,7 +654,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                   0, 0, 0, 4),
                                                       child: Icon(
                                                         Icons.person,
-                                                        color: Color(0xFF9E9E9E),
+                                                        color:
+                                                            Color(0xFF9E9E9E),
                                                         size: 20,
                                                       ),
                                                     ),
@@ -704,8 +714,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                               FFButtonOptions(
                                                             width: 100,
                                                             height: 23,
-                                                            color:
-                                                                Color(0x003474E0),
+                                                            color: Color(
+                                                                0x003474E0),
                                                             textStyle:
                                                                 FlutterFlowTheme
                                                                     .subtitle2
@@ -738,9 +748,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                             alignment:
                                                 AlignmentDirectional(-1, 0),
                                             child: Padding(
-                                              padding:
-                                                  EdgeInsetsDirectional.fromSTEB(
-                                                      5, 10, 0, 0),
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(5, 10, 0, 0),
                                               child: FFButtonWidget(
                                                 onPressed: () async {
                                                   await Navigator.push(
@@ -854,14 +863,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   color: Colors.white,
                                   size: 30,
                                 ),
-                                onPressed: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => HomeWidget(),
-                                    ),
-                                  );
-                                },
+                                onPressed: () {},
                               ),
                             ),
                           ),

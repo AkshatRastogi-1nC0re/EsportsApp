@@ -2,10 +2,13 @@ import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
+import '../home/home_widget.dart';
 import '../home_page/home_page_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../profile_page/profile_page_widget.dart';
 
 class ArenaWidget extends StatefulWidget {
   ArenaWidget({Key key}) : super(key: key);
@@ -77,20 +80,35 @@ class _ArenaWidgetState extends State<ArenaWidget> {
                           Expanded(
                             child: Align(
                               alignment: AlignmentDirectional(0, -0.05),
-                              child: FlutterFlowIconButton(
-                                borderColor: Colors.transparent,
-                                borderRadius: 30,
-                                borderWidth: 1,
-                                buttonSize: 60,
-                                fillColor: Color(0x009E9E9E),
-                                icon: Icon(
-                                  Icons.home,
-                                  color: Colors.white,
-                                  size: 30,
-                                ),
-                                onPressed: () {
-                                  print('IconButton pressed ...');
+                              child: GestureDetector(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => HomeWidget(),
+                                    ),
+                                  );
                                 },
+                                child: FlutterFlowIconButton(
+                                  borderColor: Colors.transparent,
+                                  borderRadius: 30,
+                                  borderWidth: 1,
+                                  buttonSize: 60,
+                                  fillColor: Color(0x009E9E9E),
+                                  icon: Icon(
+                                    Icons.home,
+                                    color: Colors.white,
+                                    size: 30,
+                                  ),
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => HomeWidget(),
+                                      ),
+                                    );
+                                  },
+                                ),
                               ),
                             ),
                           ),
@@ -159,7 +177,12 @@ class _ArenaWidgetState extends State<ArenaWidget> {
                                   size: 30,
                                 ),
                                 onPressed: () {
-                                  print('IconButton pressed ...');
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => ProfilePageWidget(),
+                                    ),
+                                  );
                                 },
                               ),
                             ),
@@ -242,7 +265,8 @@ class _ArenaWidgetState extends State<ArenaWidget> {
                         Align(
                           alignment: AlignmentDirectional(-1, 0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(5, 10, 0, 0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(5, 10, 0, 0),
                             child: FFButtonWidget(
                               onPressed: () async {
                                 await Navigator.push(
@@ -303,7 +327,8 @@ class _ArenaWidgetState extends State<ArenaWidget> {
                         Align(
                           alignment: AlignmentDirectional(-1, 0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(5, 10, 0, 0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(5, 10, 0, 0),
                             child: FFButtonWidget(
                               onPressed: () async {
                                 await Navigator.push(
@@ -364,7 +389,8 @@ class _ArenaWidgetState extends State<ArenaWidget> {
                         Align(
                           alignment: AlignmentDirectional(-1, 0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(5, 10, 0, 0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(5, 10, 0, 0),
                             child: FFButtonWidget(
                               onPressed: () async {
                                 await Navigator.push(
@@ -425,7 +451,8 @@ class _ArenaWidgetState extends State<ArenaWidget> {
                         Align(
                           alignment: AlignmentDirectional(-1, 0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(5, 10, 0, 0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(5, 10, 0, 0),
                             child: FFButtonWidget(
                               onPressed: () async {
                                 await Navigator.push(

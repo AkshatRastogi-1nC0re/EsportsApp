@@ -2,6 +2,7 @@ import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
+import '../home/home_widget.dart';
 import '../home_page/home_page_widget.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
@@ -229,7 +230,7 @@ class _ChooseYourgames2WidgetState extends State<ChooseYourgames2Widget> {
                           Align(
                             alignment: AlignmentDirectional(-0.15, -0.9),
                             child: AutoSizeText(
-                              'Choose your games',
+                              'Choose your Games',
                               textAlign: TextAlign.center,
                               style: FlutterFlowTheme.bodyText1.override(
                                 fontFamily: 'Poppins',
@@ -255,7 +256,7 @@ class _ChooseYourgames2WidgetState extends State<ChooseYourgames2Widget> {
                         await Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => HomePageWidget(),
+                            builder: (context) => HomeWidget(),
                           ),
                         );
                       } finally {
