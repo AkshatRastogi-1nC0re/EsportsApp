@@ -64,8 +64,8 @@ class _SignInPageWidgetState extends State<SignInPageWidget> {
                             Align(
                               alignment: AlignmentDirectional(0, 0.45),
                               child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(5, 10, 0, 10),
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    5, 10, 0, 10),
                                 child: FFButtonWidget(
                                   onPressed: () async {
                                     setState(() => _loadingButton1 = true);
@@ -309,7 +309,7 @@ class _SignInPageWidgetState extends State<SignInPageWidget> {
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(-0.25, 0.95),
+                      alignment: AlignmentDirectional(-0.25, 0.85),
                       child: AutoSizeText(
                         'Don\'t have an account ?',
                         textAlign: TextAlign.center,
@@ -321,7 +321,7 @@ class _SignInPageWidgetState extends State<SignInPageWidget> {
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0.45, 0.95),
+                      alignment: AlignmentDirectional(0.45, 0.85),
                       child: InkWell(
                         onTap: () async {
                           await Navigator.push(
