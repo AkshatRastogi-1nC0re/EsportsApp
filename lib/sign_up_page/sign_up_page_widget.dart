@@ -2,6 +2,7 @@ import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import '../home_page/home_page_widget.dart';
+import '../registration_form/registration_form_widget.dart';
 import '../sign_in_page/sign_in_page_widget.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
@@ -216,7 +217,7 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
                     );
                   },
                   child: AutoSizeText(
-                    'Sign up',
+                    'Log In',
                     textAlign: TextAlign.center,
                     style: FlutterFlowTheme.bodyText1.override(
                       fontFamily: 'Poppins',
@@ -240,7 +241,7 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget> {
                     await Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => HomePageWidget(),
+                        builder: (context) => RegistrationFormWidget(),
                       ),
                     );
                   } finally {
