@@ -882,7 +882,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(-0.85, -0.9),
+              alignment: AlignmentDirectional(-0.85, -0.94),
               child: FlutterFlowIconButton(
                 borderColor: Colors.transparent,
                 borderRadius: 20,
