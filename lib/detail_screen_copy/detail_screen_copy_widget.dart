@@ -384,7 +384,7 @@ class _DetailScreenCopyWidgetState extends State<DetailScreenCopyWidget> {
                       ],
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(17, 30, 0, 0),
+                      padding: EdgeInsetsDirectional.fromSTEB(17, 30, 0, 10),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -398,660 +398,512 @@ class _DetailScreenCopyWidgetState extends State<DetailScreenCopyWidget> {
                         ],
                       ),
                     ),
-                    Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Expanded(
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
-                            child: Card(
-                              clipBehavior: Clip.antiAliasWithSaveLayer,
-                              color: Color(0xFF060A29),
-                              elevation: 3,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(8),
-                              ),
-                              child: Stack(
-                                children: [
-                                  Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      Image.asset(
-                                        'assets/images/Rectangle_64.png',
-                                        width:
-                                            MediaQuery.of(context).size.width,
-                                        height: 120,
-                                        fit: BoxFit.cover,
-                                      ),
-                                      Container(
-                                        width:
-                                            MediaQuery.of(context).size.width *
-                                                0.85,
-                                        height: 1,
-                                        decoration: BoxDecoration(
-                                          color: Colors.white,
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Container(
+                            width: MediaQuery.of(context).size.width*0.7,
+                            child: Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(18, 0, 8, 0),
+                              child: Card(
+                                clipBehavior: Clip.antiAliasWithSaveLayer,
+                                color: Color(0xFF060A29),
+                                elevation: 3,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                child: Stack(
+                                  children: [
+                                    Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Image.asset(
+                                          'assets/images/Rectangle_64.png',
+                                          width:
+                                              MediaQuery.of(context).size.width,
+                                          height: 120,
+                                          fit: BoxFit.cover,
                                         ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            12, 4, 12, 4),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 4, 0, 0),
-                                              child: Text(
-                                                'Introduction to the game',
-                                                style: FlutterFlowTheme
-                                                    .subtitle1
-                                                    .override(
-                                                  fontFamily: 'Lexend Deca',
-                                                  color: Colors.white,
-                                                  fontSize: 18,
-                                                  fontWeight: FontWeight.w500,
-                                                ),
-                                              ),
-                                            )
-                                          ],
+                                        Container(
+                                          width:
+                                              MediaQuery.of(context).size.width *
+                                                  0.85,
+                                          height: 1,
+                                          decoration: BoxDecoration(
+                                            color: Colors.white,
+                                          ),
                                         ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            12, 4, 12, 4),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Expanded(
-                                              child: Text(
-                                                'Short description goes here and can be more\nthan one line. Two lines is the best length… ',
-                                                style: FlutterFlowTheme
-                                                    .bodyText2
-                                                    .override(
-                                                  fontFamily: 'Lexend Deca',
-                                                  color: Color(0xFF8B97A2),
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.normal,
-                                                ),
-                                              ),
-                                            )
-                                          ],
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            12, 4, 12, 8),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 0, 0, 4),
-                                              child: Icon(
-                                                Icons.person,
-                                                color: Color(0xFF9E9E9E),
-                                                size: 20,
-                                              ),
-                                            ),
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(4, 0, 80, 0),
-                                              child: Text(
-                                                'Robert California',
-                                                style: FlutterFlowTheme
-                                                    .bodyText1
-                                                    .override(
-                                                  fontFamily: 'Lexend Deca',
-                                                  color: Color(0xFF9E9E9E),
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.w500,
-                                                ),
-                                              ),
-                                            ),
-                                            Align(
-                                              alignment:
-                                                  AlignmentDirectional(0, 0.55),
-                                              child: Padding(
+                                        Padding(
+                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                              12, 4, 12, 4),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children: [
+                                              Padding(
                                                 padding: EdgeInsetsDirectional
-                                                    .fromSTEB(5, 0, 0, 0),
-                                                child: FFButtonWidget(
-                                                  onPressed: () async {
-                                                    setState(() =>
-                                                        _loadingButton1 = true);
-                                                    try {
-                                                      await Navigator.push(
-                                                        context,
-                                                        MaterialPageRoute(
-                                                          builder: (context) =>
-                                                              HomePageWidget(),
-                                                        ),
-                                                      );
-                                                    } finally {
-                                                      setState(() =>
-                                                          _loadingButton1 =
-                                                              false);
-                                                    }
-                                                  },
-                                                  text: 'INTRO',
-                                                  options: FFButtonOptions(
-                                                    width: 100,
-                                                    height: 23,
-                                                    color: Color(0x003474E0),
-                                                    textStyle: FlutterFlowTheme
-                                                        .subtitle2
-                                                        .override(
-                                                      fontFamily: 'Poppins',
-                                                      color: Color(0xFF37E0D0),
-                                                      fontSize: 20,
-                                                    ),
-                                                    borderSide: BorderSide(
-                                                      color: Color(0xFF37E0D0),
-                                                      width: 2,
-                                                    ),
-                                                    borderRadius: 12,
+                                                    .fromSTEB(0, 4, 0, 0),
+                                                child: Text(
+                                                  'Introduction to the game',
+                                                  style: FlutterFlowTheme
+                                                      .subtitle1
+                                                      .override(
+                                                    fontFamily: 'Lexend Deca',
+                                                    color: Colors.white,
+                                                    fontSize: 18,
+                                                    fontWeight: FontWeight.w500,
                                                   ),
-                                                  loading: _loadingButton1,
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                              12, 4, 12, 4),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children: [
+                                              Expanded(
+                                                child: Text(
+                                                  'Short description goes here and can be more\nthan one line. Two lines is the best length… ',
+                                                  style: FlutterFlowTheme
+                                                      .bodyText2
+                                                      .override(
+                                                    fontFamily: 'Lexend Deca',
+                                                    color: Color(0xFF8B97A2),
+                                                    fontSize: 14,
+                                                    fontWeight: FontWeight.normal,
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                              12, 4, 12, 8),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children: [
+                                              Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(0, 0, 0, 4),
+                                                child: Icon(
+                                                  Icons.person,
+                                                  color: Color(0xFF9E9E9E),
+                                                  size: 20,
                                                 ),
                                               ),
-                                            )
-                                          ],
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                  Align(
-                                    alignment: AlignmentDirectional(-1, 0),
-                                    child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          5, 10, 0, 0),
-                                      child: FFButtonWidget(
-                                        onPressed: () async {
-                                          await Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                              builder: (context) =>
-                                                  HomePageWidget(),
+                                              Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(4, 0, 80, 0),
+                                                child: Text(
+                                                  'Robert California',
+                                                  style: FlutterFlowTheme
+                                                      .bodyText1
+                                                      .override(
+                                                    fontFamily: 'Lexend Deca',
+                                                    color: Color(0xFF9E9E9E),
+                                                    fontSize: 14,
+                                                    fontWeight: FontWeight.w500,
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                    Align(
+                                      alignment: AlignmentDirectional(-1, 0),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            5, 10, 0, 0),
+                                        child: FFButtonWidget(
+                                          onPressed: () async {
+                                            await Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    HomePageWidget(),
+                                              ),
+                                            );
+                                          },
+                                          text: '4.8',
+                                          icon: Icon(
+                                            Icons.star_sharp,
+                                            color: Color(0xFFFFE500),
+                                            size: 15,
+                                          ),
+                                          options: FFButtonOptions(
+                                            width: 75,
+                                            height: 23,
+                                            color: Colors.white,
+                                            textStyle: FlutterFlowTheme.subtitle2
+                                                .override(
+                                              fontFamily: 'Poppins',
+                                              color: Colors.black,
+                                              fontSize: 20,
                                             ),
-                                          );
-                                        },
-                                        text: '4.8',
-                                        icon: Icon(
-                                          Icons.star_sharp,
-                                          color: Color(0xFFFFE500),
-                                          size: 15,
-                                        ),
-                                        options: FFButtonOptions(
-                                          width: 75,
-                                          height: 23,
-                                          color: Colors.white,
-                                          textStyle: FlutterFlowTheme.subtitle2
-                                              .override(
-                                            fontFamily: 'Poppins',
-                                            color: Colors.black,
-                                            fontSize: 20,
+                                            borderSide: BorderSide(
+                                              color: Color(0x0037E0D0),
+                                              width: 0,
+                                            ),
+                                            borderRadius: 12,
                                           ),
-                                          borderSide: BorderSide(
-                                            color: Color(0x0037E0D0),
-                                            width: 0,
-                                          ),
-                                          borderRadius: 12,
                                         ),
                                       ),
-                                    ),
-                                  )
-                                ],
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                        // Expanded(
-                        //   child: Padding(
-                        //     padding:
-                        //         EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
-                        //     child: Card(
-                        //       clipBehavior: Clip.antiAliasWithSaveLayer,
-                        //       color: Color(0xFF060A29),
-                        //       elevation: 3,
-                        //       shape: RoundedRectangleBorder(
-                        //         borderRadius: BorderRadius.circular(8),
-                        //       ),
-                        //       child: Stack(
-                        //         children: [
-                        //           Column(
-                        //             mainAxisSize: MainAxisSize.max,
-                        //             children: [
-                        //               Image.asset(
-                        //                 'assets/images/Rectangle_64.png',
-                        //                 width: MediaQuery.of(context)
-                        //                     .size
-                        //                     .width,
-                        //                 height: 120,
-                        //                 fit: BoxFit.cover,
-                        //               ),
-                        //               Container(
-                        //                 width: MediaQuery.of(context)
-                        //                         .size
-                        //                         .width *
-                        //                     0.85,
-                        //                 height: 1,
-                        //                 decoration: BoxDecoration(
-                        //                   color: Colors.white,
-                        //                 ),
-                        //               ),
-                        //               Padding(
-                        //                 padding:
-                        //                     EdgeInsetsDirectional.fromSTEB(
-                        //                         12, 4, 12, 4),
-                        //                 child: Row(
-                        //                   mainAxisSize: MainAxisSize.max,
-                        //                   children: [
-                        //                     Padding(
-                        //                       padding: EdgeInsetsDirectional
-                        //                           .fromSTEB(0, 4, 0, 0),
-                        //                       child: Text(
-                        //                         'Introduction to the game',
-                        //                         style: FlutterFlowTheme
-                        //                             .subtitle1
-                        //                             .override(
-                        //                           fontFamily: 'Lexend Deca',
-                        //                           color: Colors.white,
-                        //                           fontSize: 18,
-                        //                           fontWeight:
-                        //                               FontWeight.w500,
-                        //                         ),
-                        //                       ),
-                        //                     )
-                        //                   ],
-                        //                 ),
-                        //               ),
-                        //               Padding(
-                        //                 padding:
-                        //                     EdgeInsetsDirectional.fromSTEB(
-                        //                         12, 4, 12, 4),
-                        //                 child: Row(
-                        //                   mainAxisSize: MainAxisSize.max,
-                        //                   children: [
-                        //                     Expanded(
-                        //                       child: Text(
-                        //                         'Short description goes here and can be more\nthan one line. Two lines is the best length… ',
-                        //                         style: FlutterFlowTheme
-                        //                             .bodyText2
-                        //                             .override(
-                        //                           fontFamily: 'Lexend Deca',
-                        //                           color: Color(0xFF8B97A2),
-                        //                           fontSize: 14,
-                        //                           fontWeight:
-                        //                               FontWeight.normal,
-                        //                         ),
-                        //                       ),
-                        //                     )
-                        //                   ],
-                        //                 ),
-                        //               ),
-                        //               Padding(
-                        //                 padding:
-                        //                     EdgeInsetsDirectional.fromSTEB(
-                        //                         12, 4, 12, 8),
-                        //                 child: Row(
-                        //                   mainAxisSize: MainAxisSize.max,
-                        //                   children: [
-                        //                     Padding(
-                        //                       padding: EdgeInsetsDirectional
-                        //                           .fromSTEB(0, 0, 0, 4),
-                        //                       child: Icon(
-                        //                         Icons.person,
-                        //                         color: Color(0xFF9E9E9E),
-                        //                         size: 20,
-                        //                       ),
-                        //                     ),
-                        //                     Padding(
-                        //                       padding: EdgeInsetsDirectional
-                        //                           .fromSTEB(4, 0, 80, 0),
-                        //                       child: Text(
-                        //                         'Robert California',
-                        //                         style: FlutterFlowTheme
-                        //                             .bodyText1
-                        //                             .override(
-                        //                           fontFamily: 'Lexend Deca',
-                        //                           color: Color(0xFF9E9E9E),
-                        //                           fontSize: 14,
-                        //                           fontWeight:
-                        //                               FontWeight.w500,
-                        //                         ),
-                        //                       ),
-                        //                     ),
-                        //                     Align(
-                        //                       alignment:
-                        //                           AlignmentDirectional(
-                        //                               0, 0.55),
-                        //                       child: Padding(
-                        //                         padding:
-                        //                             EdgeInsetsDirectional
-                        //                                 .fromSTEB(
-                        //                                     5, 0, 0, 0),
-                        //                         child: FFButtonWidget(
-                        //                           onPressed: () async {
-                        //                             setState(() =>
-                        //                                 _loadingButton2 =
-                        //                                     true);
-                        //                             try {
-                        //                               await Navigator.push(
-                        //                                 context,
-                        //                                 MaterialPageRoute(
-                        //                                   builder: (context) =>
-                        //                                       HomePageWidget(),
-                        //                                 ),
-                        //                               );
-                        //                             } finally {
-                        //                               setState(() =>
-                        //                                   _loadingButton2 =
-                        //                                       false);
-                        //                             }
-                        //                           },
-                        //                           text: 'INTRO',
-                        //                           options: FFButtonOptions(
-                        //                             width: 100,
-                        //                             height: 23,
-                        //                             color:
-                        //                                 Color(0x003474E0),
-                        //                             textStyle:
-                        //                                 FlutterFlowTheme
-                        //                                     .subtitle2
-                        //                                     .override(
-                        //                               fontFamily: 'Poppins',
-                        //                               color:
-                        //                                   Color(0xFF37E0D0),
-                        //                               fontSize: 20,
-                        //                             ),
-                        //                             borderSide: BorderSide(
-                        //                               color:
-                        //                                   Color(0xFF37E0D0),
-                        //                               width: 2,
-                        //                             ),
-                        //                             borderRadius: 12,
-                        //                           ),
-                        //                           loading: _loadingButton2,
-                        //                         ),
-                        //                       ),
-                        //                     )
-                        //                   ],
-                        //                 ),
-                        //               )
-                        //             ],
-                        //           ),
-                        //           Align(
-                        //             alignment: AlignmentDirectional(-1, 0),
-                        //             child: Padding(
-                        //               padding:
-                        //                   EdgeInsetsDirectional.fromSTEB(
-                        //                       5, 10, 0, 0),
-                        //               child: FFButtonWidget(
-                        //                 onPressed: () async {
-                        //                   await Navigator.push(
-                        //                     context,
-                        //                     MaterialPageRoute(
-                        //                       builder: (context) =>
-                        //                           HomePageWidget(),
-                        //                     ),
-                        //                   );
-                        //                 },
-                        //                 text: '4.8',
-                        //                 icon: Icon(
-                        //                   Icons.star_sharp,
-                        //                   color: Color(0xFFFFE500),
-                        //                   size: 15,
-                        //                 ),
-                        //                 options: FFButtonOptions(
-                        //                   width: 75,
-                        //                   height: 23,
-                        //                   color: Colors.white,
-                        //                   textStyle: FlutterFlowTheme
-                        //                       .subtitle2
-                        //                       .override(
-                        //                     fontFamily: 'Poppins',
-                        //                     color: Colors.black,
-                        //                     fontSize: 20,
-                        //                   ),
-                        //                   borderSide: BorderSide(
-                        //                     color: Color(0x0037E0D0),
-                        //                     width: 0,
-                        //                   ),
-                        //                   borderRadius: 12,
-                        //                 ),
-                        //               ),
-                        //             ),
-                        //           )
-                        //         ],
-                        //       ),
-                        //     ),
-                        //   ),
-                        // ),
-                        // Expanded(
-                        //   child: Padding(
-                        //     padding:
-                        //         EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
-                        //     child: Card(
-                        //       clipBehavior: Clip.antiAliasWithSaveLayer,
-                        //       color: Color(0xFF060A29),
-                        //       elevation: 3,
-                        //       shape: RoundedRectangleBorder(
-                        //         borderRadius: BorderRadius.circular(8),
-                        //       ),
-                        //       child: Stack(
-                        //         children: [
-                        //           Column(
-                        //             mainAxisSize: MainAxisSize.max,
-                        //             children: [
-                        //               Image.asset(
-                        //                 'assets/images/Rectangle_64.png',
-                        //                 width: MediaQuery.of(context)
-                        //                     .size
-                        //                     .width,
-                        //                 height: 120,
-                        //                 fit: BoxFit.cover,
-                        //               ),
-                        //               Container(
-                        //                 width: MediaQuery.of(context)
-                        //                         .size
-                        //                         .width *
-                        //                     0.85,
-                        //                 height: 1,
-                        //                 decoration: BoxDecoration(
-                        //                   color: Colors.white,
-                        //                 ),
-                        //               ),
-                        //               Padding(
-                        //                 padding:
-                        //                     EdgeInsetsDirectional.fromSTEB(
-                        //                         12, 4, 12, 4),
-                        //                 child: Row(
-                        //                   mainAxisSize: MainAxisSize.max,
-                        //                   children: [
-                        //                     Padding(
-                        //                       padding: EdgeInsetsDirectional
-                        //                           .fromSTEB(0, 4, 0, 0),
-                        //                       child: Text(
-                        //                         'Introduction to the game',
-                        //                         style: FlutterFlowTheme
-                        //                             .subtitle1
-                        //                             .override(
-                        //                           fontFamily: 'Lexend Deca',
-                        //                           color: Colors.white,
-                        //                           fontSize: 18,
-                        //                           fontWeight:
-                        //                               FontWeight.w500,
-                        //                         ),
-                        //                       ),
-                        //                     )
-                        //                   ],
-                        //                 ),
-                        //               ),
-                        //               Padding(
-                        //                 padding:
-                        //                     EdgeInsetsDirectional.fromSTEB(
-                        //                         12, 4, 12, 4),
-                        //                 child: Row(
-                        //                   mainAxisSize: MainAxisSize.max,
-                        //                   children: [
-                        //                     Expanded(
-                        //                       child: Text(
-                        //                         'Short description goes here and can be more\nthan one line. Two lines is the best length… ',
-                        //                         style: FlutterFlowTheme
-                        //                             .bodyText2
-                        //                             .override(
-                        //                           fontFamily: 'Lexend Deca',
-                        //                           color: Color(0xFF8B97A2),
-                        //                           fontSize: 14,
-                        //                           fontWeight:
-                        //                               FontWeight.normal,
-                        //                         ),
-                        //                       ),
-                        //                     )
-                        //                   ],
-                        //                 ),
-                        //               ),
-                        //               Padding(
-                        //                 padding:
-                        //                     EdgeInsetsDirectional.fromSTEB(
-                        //                         12, 4, 12, 8),
-                        //                 child: Row(
-                        //                   mainAxisSize: MainAxisSize.max,
-                        //                   children: [
-                        //                     Padding(
-                        //                       padding: EdgeInsetsDirectional
-                        //                           .fromSTEB(0, 0, 0, 4),
-                        //                       child: Icon(
-                        //                         Icons.person,
-                        //                         color: Color(0xFF9E9E9E),
-                        //                         size: 20,
-                        //                       ),
-                        //                     ),
-                        //                     Padding(
-                        //                       padding: EdgeInsetsDirectional
-                        //                           .fromSTEB(4, 0, 80, 0),
-                        //                       child: Text(
-                        //                         'Robert California',
-                        //                         style: FlutterFlowTheme
-                        //                             .bodyText1
-                        //                             .override(
-                        //                           fontFamily: 'Lexend Deca',
-                        //                           color: Color(0xFF9E9E9E),
-                        //                           fontSize: 14,
-                        //                           fontWeight:
-                        //                               FontWeight.w500,
-                        //                         ),
-                        //                       ),
-                        //                     ),
-                        //                     Align(
-                        //                       alignment:
-                        //                           AlignmentDirectional(
-                        //                               0, 0.55),
-                        //                       child: Padding(
-                        //                         padding:
-                        //                             EdgeInsetsDirectional
-                        //                                 .fromSTEB(
-                        //                                     5, 0, 0, 0),
-                        //                         child: FFButtonWidget(
-                        //                           onPressed: () async {
-                        //                             setState(() =>
-                        //                                 _loadingButton3 =
-                        //                                     true);
-                        //                             try {
-                        //                               await Navigator.push(
-                        //                                 context,
-                        //                                 MaterialPageRoute(
-                        //                                   builder: (context) =>
-                        //                                       HomePageWidget(),
-                        //                                 ),
-                        //                               );
-                        //                             } finally {
-                        //                               setState(() =>
-                        //                                   _loadingButton3 =
-                        //                                       false);
-                        //                             }
-                        //                           },
-                        //                           text: 'INTRO',
-                        //                           options: FFButtonOptions(
-                        //                             width: 100,
-                        //                             height: 23,
-                        //                             color:
-                        //                                 Color(0x003474E0),
-                        //                             textStyle:
-                        //                                 FlutterFlowTheme
-                        //                                     .subtitle2
-                        //                                     .override(
-                        //                               fontFamily: 'Poppins',
-                        //                               color:
-                        //                                   Color(0xFF37E0D0),
-                        //                               fontSize: 20,
-                        //                             ),
-                        //                             borderSide: BorderSide(
-                        //                               color:
-                        //                                   Color(0xFF37E0D0),
-                        //                               width: 2,
-                        //                             ),
-                        //                             borderRadius: 12,
-                        //                           ),
-                        //                           loading: _loadingButton3,
-                        //                         ),
-                        //                       ),
-                        //                     )
-                        //                   ],
-                        //                 ),
-                        //               )
-                        //             ],
-                        //           ),
-                        //           Align(
-                        //             alignment: AlignmentDirectional(-1, 0),
-                        //             child: Padding(
-                        //               padding:
-                        //                   EdgeInsetsDirectional.fromSTEB(
-                        //                       5, 10, 0, 0),
-                        //               child: FFButtonWidget(
-                        //                 onPressed: () async {
-                        //                   await Navigator.push(
-                        //                     context,
-                        //                     MaterialPageRoute(
-                        //                       builder: (context) =>
-                        //                           HomePageWidget(),
-                        //                     ),
-                        //                   );
-                        //                 },
-                        //                 text: '4.8',
-                        //                 icon: Icon(
-                        //                   Icons.star_sharp,
-                        //                   color: Color(0xFFFFE500),
-                        //                   size: 15,
-                        //                 ),
-                        //                 options: FFButtonOptions(
-                        //                   width: 75,
-                        //                   height: 23,
-                        //                   color: Colors.white,
-                        //                   textStyle: FlutterFlowTheme
-                        //                       .subtitle2
-                        //                       .override(
-                        //                     fontFamily: 'Poppins',
-                        //                     color: Colors.black,
-                        //                     fontSize: 20,
-                        //                   ),
-                        //                   borderSide: BorderSide(
-                        //                     color: Color(0x0037E0D0),
-                        //                     width: 0,
-                        //                   ),
-                        //                   borderRadius: 12,
-                        //                 ),
-                        //               ),
-                        //             ),
-                        //           )
-                        //         ],
-                        //       ),
-                        //     ),
-                        //   ),
-                        // )
-                      ],
+                          Container(
+                            width: 300,
+                            child: Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
+                              child: Card(
+                                clipBehavior: Clip.antiAliasWithSaveLayer,
+                                color: Color(0xFF060A29),
+                                elevation: 3,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                child: Stack(
+                                  children: [
+                                    Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Image.asset(
+                                          'assets/images/Rectangle_64.png',
+                                          width: MediaQuery.of(context)
+                                              .size
+                                              .width,
+                                          height: 120,
+                                          fit: BoxFit.cover,
+                                        ),
+                                        Container(
+                                          width: MediaQuery.of(context)
+                                                  .size
+                                                  .width *
+                                              0.85,
+                                          height: 1,
+                                          decoration: BoxDecoration(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  12, 4, 12, 4),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children: [
+                                              Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(0, 4, 0, 0),
+                                                child: Text(
+                                                  'Introduction to the game',
+                                                  style: FlutterFlowTheme
+                                                      .subtitle1
+                                                      .override(
+                                                    fontFamily: 'Lexend Deca',
+                                                    color: Colors.white,
+                                                    fontSize: 18,
+                                                    fontWeight:
+                                                        FontWeight.w500,
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  12, 4, 12, 4),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children: [
+                                              Expanded(
+                                                child: Text(
+                                                  'Short description goes here and can be more\nthan one line. Two lines is the best length… ',
+                                                  style: FlutterFlowTheme
+                                                      .bodyText2
+                                                      .override(
+                                                    fontFamily: 'Lexend Deca',
+                                                    color: Color(0xFF8B97A2),
+                                                    fontSize: 14,
+                                                    fontWeight:
+                                                        FontWeight.normal,
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  12, 4, 12, 8),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children: [
+                                              Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(0, 0, 0, 4),
+                                                child: Icon(
+                                                  Icons.person,
+                                                  color: Color(0xFF9E9E9E),
+                                                  size: 20,
+                                                ),
+                                              ),
+                                              Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(4, 0, 80, 0),
+                                                child: Text(
+                                                  'Robert California',
+                                                  style: FlutterFlowTheme
+                                                      .bodyText1
+                                                      .override(
+                                                    fontFamily: 'Lexend Deca',
+                                                    color: Color(0xFF9E9E9E),
+                                                    fontSize: 14,
+                                                    fontWeight:
+                                                        FontWeight.w500,
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                    Align(
+                                      alignment: AlignmentDirectional(-1, 0),
+                                      child: Padding(
+                                        padding:
+                                            EdgeInsetsDirectional.fromSTEB(
+                                                5, 10, 0, 0),
+                                        child: FFButtonWidget(
+                                          onPressed: () async {
+                                            await Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    HomePageWidget(),
+                                              ),
+                                            );
+                                          },
+                                          text: '4.8',
+                                          icon: Icon(
+                                            Icons.star_sharp,
+                                            color: Color(0xFFFFE500),
+                                            size: 15,
+                                          ),
+                                          options: FFButtonOptions(
+                                            width: 75,
+                                            height: 23,
+                                            color: Colors.white,
+                                            textStyle: FlutterFlowTheme
+                                                .subtitle2
+                                                .override(
+                                              fontFamily: 'Poppins',
+                                              color: Colors.black,
+                                              fontSize: 20,
+                                            ),
+                                            borderSide: BorderSide(
+                                              color: Color(0x0037E0D0),
+                                              width: 0,
+                                            ),
+                                            borderRadius: 12,
+                                          ),
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                          Container(
+                            width: 300,
+                            child: Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
+                              child: Card(
+                                clipBehavior: Clip.antiAliasWithSaveLayer,
+                                color: Color(0xFF060A29),
+                                elevation: 3,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                child: Stack(
+                                  children: [
+                                    Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Image.asset(
+                                          'assets/images/Rectangle_64.png',
+                                          width: MediaQuery.of(context)
+                                              .size
+                                              .width,
+                                          height: 120,
+                                          fit: BoxFit.cover,
+                                        ),
+                                        Container(
+                                          width: MediaQuery.of(context)
+                                                  .size
+                                                  .width *
+                                              0.85,
+                                          height: 1,
+                                          decoration: BoxDecoration(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  12, 4, 12, 4),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children: [
+                                              Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(0, 4, 0, 0),
+                                                child: Text(
+                                                  'Introduction to the game',
+                                                  style: FlutterFlowTheme
+                                                      .subtitle1
+                                                      .override(
+                                                    fontFamily: 'Lexend Deca',
+                                                    color: Colors.white,
+                                                    fontSize: 18,
+                                                    fontWeight:
+                                                        FontWeight.w500,
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  12, 4, 12, 4),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children: [
+                                              Expanded(
+                                                child: Text(
+                                                  'Short description goes here and can be more\nthan one line. Two lines is the best length… ',
+                                                  style: FlutterFlowTheme
+                                                      .bodyText2
+                                                      .override(
+                                                    fontFamily: 'Lexend Deca',
+                                                    color: Color(0xFF8B97A2),
+                                                    fontSize: 14,
+                                                    fontWeight:
+                                                        FontWeight.normal,
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  12, 4, 12, 8),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children: [
+                                              Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(0, 0, 0, 4),
+                                                child: Icon(
+                                                  Icons.person,
+                                                  color: Color(0xFF9E9E9E),
+                                                  size: 20,
+                                                ),
+                                              ),
+                                              Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(4, 0, 80, 0),
+                                                child: Text(
+                                                  'Robert California',
+                                                  style: FlutterFlowTheme
+                                                      .bodyText1
+                                                      .override(
+                                                    fontFamily: 'Lexend Deca',
+                                                    color: Color(0xFF9E9E9E),
+                                                    fontSize: 14,
+                                                    fontWeight:
+                                                        FontWeight.w500,
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                    Align(
+                                      alignment: AlignmentDirectional(-1, 0),
+                                      child: Padding(
+                                        padding:
+                                            EdgeInsetsDirectional.fromSTEB(
+                                                5, 10, 0, 0),
+                                        child: FFButtonWidget(
+                                          onPressed: () async {
+                                            await Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    HomePageWidget(),
+                                              ),
+                                            );
+                                          },
+                                          text: '4.8',
+                                          icon: Icon(
+                                            Icons.star_sharp,
+                                            color: Color(0xFFFFE500),
+                                            size: 15,
+                                          ),
+                                          options: FFButtonOptions(
+                                            width: 75,
+                                            height: 23,
+                                            color: Colors.white,
+                                            textStyle: FlutterFlowTheme
+                                                .subtitle2
+                                                .override(
+                                              fontFamily: 'Poppins',
+                                              color: Colors.black,
+                                              fontSize: 20,
+                                            ),
+                                            borderSide: BorderSide(
+                                              color: Color(0x0037E0D0),
+                                              width: 0,
+                                            ),
+                                            borderRadius: 12,
+                                          ),
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 20),
                       child: FFButtonWidget(
                         onPressed: () {
                           print('Button pressed ...');
