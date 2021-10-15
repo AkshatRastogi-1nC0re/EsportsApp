@@ -1239,7 +1239,7 @@ class _HomeWidgetState extends State<HomeWidget> {
             Align(
               alignment: AlignmentDirectional(-0.85, -0.95),
               child: Text(
-                'Hi Saksham 👋',
+                'Hi User 👋',
                 style: FlutterFlowTheme.bodyText1.override(
                   fontFamily: 'Poppins',
                   color: Colors.white,
